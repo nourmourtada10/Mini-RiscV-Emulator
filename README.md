@@ -34,6 +34,8 @@ sudo apt install build-essential
 sudo apt install gcc-riscv64-unknown-elf
 ```
 
+![Installation de la toolchain](screenshots/installation.png)
+
 ## 📦 Structure du projet
 
 ```
@@ -68,6 +70,8 @@ make
 
 L'exécutable `emulator` sera créé dans le dossier `build/`.
 
+![Compilation de l'émulateur](screenshots/emulator_build.png)
+
 ### Compiler un programme de test
 
 ```bash
@@ -95,11 +99,15 @@ cd emulator
 ```
 Affiche : `Hello, Mini-RISC World!`
 
+![Hello World](screenshots/hello_world.png)
+
 #### 2. Tests arithmétiques
 ```bash
 ./build/emulator ../embedded_software/arithmetic/build/esw.bin
 ```
 Teste les opérations : addition, soustraction, multiplication, division, modulo
+
+![Tests arithmétiques](screenshots/arithmetic.png)
 
 #### 3. Suite de Fibonacci
 ```bash
@@ -107,11 +115,15 @@ Teste les opérations : addition, soustraction, multiplication, division, modulo
 ```
 Calcule les premiers nombres de Fibonacci
 
+![Suite de Fibonacci](screenshots/fibonacci.png)
+
 #### 4. Tests de branchement
 ```bash
 ./build/emulator ../embedded_software/branch/build/esw.bin
 ```
 Teste les instructions de saut conditionnel et boucles
+
+![Tests de branchement](screenshots/branch.png)
 
 #### 5. Opérations logiques
 ```bash
@@ -119,11 +131,15 @@ Teste les instructions de saut conditionnel et boucles
 ```
 Teste AND, OR, XOR, shifts et opérations bit à bit
 
+![Opérations logiques](screenshots/logic.png)
+
 #### 6. Opérations mémoire
 ```bash
 ./build/emulator ../embedded_software/memory/build/esw.bin
 ```
 Teste les accès mémoire (byte, half-word, word)
+
+![Opérations mémoire](screenshots/memory.png)
 
 ## 📝 Développement de nouveaux programmes
 
