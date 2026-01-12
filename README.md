@@ -33,8 +33,7 @@ sudo apt install build-essential
 # Installation du compilateur RISC-V
 sudo apt install gcc-riscv64-unknown-elf
 ```
-
-![Installation de la toolchain](screenshots/installation.png)
+<img width="677" height="648" alt="sudo apt update " src="https://github.com/user-attachments/assets/1dac90d3-3bf9-41cc-b26a-4abcc1877ac6" />
 
 ## 📦 Structure du projet
 
@@ -69,8 +68,7 @@ make
 ```
 
 L'exécutable `emulator` sera créé dans le dossier `build/`.
-
-![Compilation de l'émulateur](screenshots/emulator_build.png)
+<img width="632" height="311" alt="build the emulator " src="https://github.com/user-attachments/assets/d929f100-a0c0-4e90-9311-142a12a58cda" />
 
 ### Compiler un programme de test
 
@@ -98,48 +96,47 @@ cd emulator
 ./build/emulator ../embedded_software/hello_world/build/esw.bin
 ```
 Affiche : `Hello, Mini-RISC World!`
-
-![Hello World](screenshots/hello_world.png)
+<img width="635" height="424" alt="compile and run hello world" src="https://github.com/user-attachments/assets/3e25ae3f-7d5c-4f19-8f30-bc9da46a5359" />
 
 #### 2. Tests arithmétiques
 ```bash
 ./build/emulator ../embedded_software/arithmetic/build/esw.bin
 ```
 Teste les opérations : addition, soustraction, multiplication, division, modulo
+<img width="634" height="577" alt="compile and run arithmetic" src="https://github.com/user-attachments/assets/3e889b3b-c9ce-4ae6-80ac-8e78acaa7740" />
 
-![Tests arithmétiques](screenshots/arithmetic.png)
 
 #### 3. Suite de Fibonacci
 ```bash
 ./build/emulator ../embedded_software/fibonacci/build/esw.bin
 ```
 Calcule les premiers nombres de Fibonacci
+<img width="641" height="455" alt="compile and run fibonacci " src="https://github.com/user-attachments/assets/8b5fb500-b888-4a75-b0fb-81054d450566" />
 
-![Suite de Fibonacci](screenshots/fibonacci.png)
 
 #### 4. Tests de branchement
 ```bash
 ./build/emulator ../embedded_software/branch/build/esw.bin
 ```
 Teste les instructions de saut conditionnel et boucles
+<img width="641" height="394" alt="compile and run branch " src="https://github.com/user-attachments/assets/77b69361-e351-48c5-8dd7-d3d0d6b4be4e" />
 
-![Tests de branchement](screenshots/branch.png)
 
 #### 5. Opérations logiques
 ```bash
 ./build/emulator ../embedded_software/logic/build/esw.bin
 ```
 Teste AND, OR, XOR, shifts et opérations bit à bit
+<img width="628" height="605" alt="compile and run logic" src="https://github.com/user-attachments/assets/63f95dc2-02e9-4c72-9999-390cfdea0ac3" />
 
-![Opérations logiques](screenshots/logic.png)
 
 #### 6. Opérations mémoire
 ```bash
 ./build/emulator ../embedded_software/memory/build/esw.bin
 ```
 Teste les accès mémoire (byte, half-word, word)
+<img width="638" height="592" alt="compile and run memory" src="https://github.com/user-attachments/assets/ebdeb800-1a4d-49d0-b5ce-554cc414f2a5" />
 
-![Opérations mémoire](screenshots/memory.png)
 
 ## 📝 Développement de nouveaux programmes
 
